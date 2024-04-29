@@ -1,7 +1,4 @@
-class QuestionsController < ApplicationController
-  def ask
-  end
-
+class CoachController < ApplicationController
   def answer
     question = params[:question]
     @answer = if question.blank?
@@ -14,7 +11,4 @@ class QuestionsController < ApplicationController
       "idgaf work  boi"
     end
   end
-  private
-
-
 end
